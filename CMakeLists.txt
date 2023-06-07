@@ -59,6 +59,8 @@ set(DESIRE_MSGS
     "${MSGS_DIR}/TrajectoryBezier.msg"
     "${MSGS_DIR}/MissionRequest.msg"
     "${MSGS_DIR}/MissionStatus.msg"
+    "${MSGS_DIR}/IrlockReport.msg"
+    "${MSGS_DIR}/LandingTargetPose.msg"
 )
 set(PX4_MSGS)
 foreach(_msg ${DESIRE_MSGS})
