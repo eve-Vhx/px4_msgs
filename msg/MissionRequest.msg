@@ -7,4 +7,4 @@ uint8 MISSION_WAYPOINT=3 #
 uint8 mission_type
 MissionWaypoint landing
 MissionWaypoint[10] waypoints # waypoints
-#bool updated
+bool updated
