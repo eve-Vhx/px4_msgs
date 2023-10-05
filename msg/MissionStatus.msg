@@ -3,10 +3,27 @@ uint64 timestamp		# time since system start (microseconds)
 uint8 MISSION_NONE=0	#
 uint8 MISSION_LANDINGLOOP=1	#
 uint8 MISSION_MOVETONEST=2	#
+uint8 MISSION_WAYPOINT=3 #
+uint8 MISSION_BOUNDING=4 #
 uint8 mission_type
-float64 lat			# latitude, in deg
-float64 lon			# longitude, in deg
-float32 alt			# altitude AMSL, in m
-float32 yaw			# yaw (only for multirotors), in rad [-PI..PI), NaN = hold current yaw
-uint32 state		# state of mission
-float32 cruise_alt  # cruising altitude
+
+uint8 PHASE_RESTING=0 #
+uint8 PHASE_DEPLOY=1 #
+uint8 PHASE_ACTIVE=2 #
+uint8 PHASE_RETURN=3 #
+uint8 PHASE_CHARGING=4 #
+uint8 mission_phase
+
+uint8 mission_id
+uint8 current_wp
+string drone_id
+string nest_id
+MissionWaypoint landing
+MissionWaypoint[10] waypoints # waypoints
+
+uint8 BOUNDING_INIT=0   #
+uint8 BOUNDING_TRANS=1   #
+uint8 BOUNDING_FINAL=2   #
+uint8 bounding_phase
+string bound_id
+MissionWaypoint[3] bounding
