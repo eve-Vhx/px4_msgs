@@ -6,8 +6,20 @@ uint8 MISSION_MOVETONEST=2	#
 uint8 MISSION_WAYPOINT=3 #
 uint8 MISSION_BOUNDING=4 #
 uint8 mission_type
+
+uint8 BOUNDING_INIT=0   #
+uint8 BOUNDING_TRANS=1   #
+uint8 BOUNDING_FINAL=2   #
+uint8 bounding_phase
+
+uint8 BOUNDING_OUT=0   #
+uint8 BOUNDING_IN=1   #
+uint8 bounding_role
+
 uint8 mission_id
-uint8 current_wp
+
 MissionWaypoint landing
 MissionWaypoint[10] waypoints # waypoints
-bool updated
+MissionWaypoint[3] bounding_wps
+uint8 current_wp
+
