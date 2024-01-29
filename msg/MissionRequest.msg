@@ -9,5 +9,5 @@ uint8 mission_type
 uint8 mission_id
 uint8 current_wp
 MissionWaypoint landing
-MissionWaypoint[10] waypoints # waypoints
+MissionWaypoint[7] waypoints # waypoints
 bool updated

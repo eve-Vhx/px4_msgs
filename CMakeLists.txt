@@ -81,7 +81,7 @@ file(GLOB PX4_SRVS RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${SRVS_DIR}/*.srv")
 # Generate introspection typesupport for C and C++ and IDL files
 rosidl_generate_interfaces(${PROJECT_NAME}
 	${PX4_MSGS}
-	${PX4_SRVS}
+	#${PX4_SRVS}
 	DEPENDENCIES builtin_interfaces
 	ADD_LINTER_TESTS
 )
