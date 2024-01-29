@@ -19,12 +19,5 @@ uint8 bounding_role
 uint8 mission_id
 
 MissionWaypoint landing
-<<<<<<< HEAD
 MissionWaypoint[7] waypoints # waypoints
 bool updated
-=======
-MissionWaypoint[10] waypoints # waypoints
-MissionWaypoint[3] bounding_wps
-uint8 current_wp
-
->>>>>>> 2da9148e6aa1533c52fbe59eee3556b09445ab03
