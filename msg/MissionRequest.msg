@@ -17,7 +17,7 @@ uint8 BOUNDING_OUT=0   #
 uint8 BOUNDING_IN=1   #
 uint8 bounding_role
 
-uint8 mission_id
+uint16 mission_id
 
 MissionWaypoint landing
 MissionWaypoint[7] waypoints # waypoints

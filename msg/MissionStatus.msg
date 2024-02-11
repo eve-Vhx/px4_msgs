@@ -15,7 +15,7 @@ uint8 PHASE_RETURN=3 #
 uint8 PHASE_CHARGING=4 #
 uint8 mission_phase
 
-uint8 mission_id
+uint16 mission_id
 uint8 current_wp
 MissionWaypoint landing
 MissionWaypoint[7] waypoints # waypoints
